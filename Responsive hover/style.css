@@ -1,0 +1,55 @@
+h1 {
+  font-size: 80px;
+  background-color: purple;
+  color: white;
+  display: block;
+    text-transform: uppercase;
+      text-decoration: underline;
+      text-decoration-color: black;
+        text-align: center;
+        border-radius: 50px;
+}
+span {
+ visibility: visible;
+ margin: 0 0 0 150px;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  height: 85px;
+  display: block;
+  text-align: center;
+  padding: 19px 0 0 0;
+  box-sizing: border-box;
+font-family: Georgia, 'Times New Roman', Times, serif;
+  transition: background 2.7s 0.7s ease-out;
+  transition: color 2.7s 0.8s ease-in;
+  transition: text-decoration-color 2s 0.5s ease-out;
+    color: green;
+      text-decoration-color: #ff21f2;
+  /* border-radius: 15px; */
+  /* background-color: aquamarine; */
+}
+p {
+  visibility: hidden;
+    transition: all 2s 0.5s ease-out;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+p:hover {
+  visibility: inherit;
+margin: 0 0 0 165px;
+background-color: wheat;
+}
+img {
+ width: 150px;
+  position: fixed;
+  left: 22.7px;
+}
+span:hover {
+  background-color: green;
+  color: white;
+  text-decoration-color: black;
+  width: 100%;
+  margin: 0;
+}

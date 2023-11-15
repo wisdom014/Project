@@ -1,0 +1,157 @@
+:root {
+  background-color: green;
+}
+div {
+  position: relative;
+      width: 60vw;
+margin: 100px auto;
+height: 30vh;
+}
+h1 {
+  display: inline;
+float: top;
+  border-radius: 7px;
+  margin-bottom: 0;
+    margin-right: 0;
+    word-spacing: 3px;
+    background: whitesmoke;
+    height: 85px;
+    padding: 5px 5px 5px 5px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    color: purple;
+    background-color: black;
+    transition: all 2s 0.5s linear;
+}
+h2 {
+    transition: all 2s 0.5s linear;
+}
+.one {
+  margin-top: 0;
+  border-radius: 0 0 7px 7px;
+    display: block;
+  align-items: right;
+  border-radius: 7px;
+/* margin: -165px 0 0 45px;
+padding: 0 0 0 5px; */
+  word-spacing: 3px;
+  background: whitesmoke;
+      font-weight: lighter;
+      box-sizing: border-box;
+color: blue;
+background-color: red;
+width: 100%;
+height: 30vh;
+  border-radius: 7px;
+      position: absolute;
+          transition: all 2.5s 0.3s ease-in-out;
+            top: 5px;
+              left: 5px;
+}
+div::before {
+  content:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aperiam, suscipit.";
+  display: block;
+  color: blue;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: red;
+    top: -77px;
+    left: -77px;
+    z-index: -2;
+    transition: all 2s 0.3s ease-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+div::after {
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, suscipit.";
+  color: blue;
+  display: block;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: red;
+    top: -37px;
+    left: -37px;
+    z-index: -2;
+    transition: all 1s 0.3s ease-in;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+div:hover::after, div:hover::before, .one:hover, .two:hover {
+  top: 0;
+  left: 0;
+  background-color: blue;
+  border-radius: 15px;
+  color: black;
+}
+h1:hover {
+  background-color: white;
+  color: green;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+h2:hover {
+  background-color: white;
+  color: green;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 700px) {
+  :root{
+    background-color: blue;
+  }
+  h1, h2{
+    text-align: center;
+    text-decoration: wavy;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    background-color: white;
+    color: #ff123f;
+  }
+}
+@media screen and (min-width: 700px) {
+  :root{
+    background-color: #12ff12;
+  }
+  h1, h2{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    background-color: white;
+    color: purple;
+  }
+}
+@media screen and (min-width: 800px) {
+  :root{
+    background-color: black;
+  }
+  h1, h2{
+    text-align: center;
+    text-decoration: line-through;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    background-color: white;
+    color: darkkhaki;
+  }
+}
+@media screen and (min-width: 1000px) {
+  :root{
+    background-color: #ff123f;
+  }
+  h1, h2{
+    text-align: center;
+    text-decoration: double;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    background-color: white;
+    color: #ff123f;
+  }
+}
+a {
+  color: red;
+}

@@ -1,0 +1,44 @@
+body{
+ background: yellow;
+}
+.banner{
+ background: blue;
+}
+h1{
+ color: white;
+ text-align: center;
+ text-decoration: underline;
+ text-transform: capitalize;
+}
+@media screen and (min-width: 600px) {
+ body{
+background: blue;
+ }
+ .banner{
+  background: yellow;
+ }
+ h1{
+   color: black;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+}
+@media screen and (min-width: 700px) {
+ body{
+background: red;
+ }
+ .banner{
+  background: green;
+ }
+ h1{
+   color: purple;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+}
+
+

@@ -1,0 +1,67 @@
+
+div {
+ display: inline-block;
+ width: 150px;
+ height: 150px;
+ margin-top: 120px;
+}
+div:hover {
+ background: coral;
+
+}
+.one {
+ background: red;
+animation-name: mover;
+  animation-duration: 10s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+}
+.two {
+ background: blue;
+ animation-name: move;
+ animation-duration: 10s;
+ animation-iteration-count: 2;
+ animation-fill-mode: forwards;
+}
+.three {
+ background: green;
+ transition: background 2s 1s, border-radius 4s 2s;
+transition-timing-function: ease-out;
+}
+.three:hover {
+border-radius: 50%;
+}
+@keyframes move {
+ 0% {
+  transform: translateX(20px);
+ }
+ 50% {
+  transform: translateX(100px);
+  background: red;
+ }
+ 75% {
+   transform: translateX(-200px);
+    background: yellow;
+ }
+ 100% {
+   transform: translateX(20px);
+    background: green;
+ }
+}
+@keyframes mover {
+ 0% {
+  transform: translateX(20px);
+ }
+ 50% {
+  transform: translateX(100px);
+  background: red;
+ }
+ 75% {
+   transform: translateX(-200px);
+    background: yellow;
+ }
+ 100% {
+   transform: translateX(30px);
+    background: green;
+ }
+}

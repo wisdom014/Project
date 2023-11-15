@@ -1,0 +1,44 @@
+:root {
+ --red: red;
+ --blue: blue;
+ --transition:all 2s  1s linear;
+}
+.heading {
+ color: var(--red);
+}
+.header {
+ color: var(--blue);
+
+}
+.subheader {
+ transition: var(--transition);
+ color: var(--red);
+ cursor: pointer;
+  text-shadow: 1px 3px 2px green;
+}
+.subheader:hover {
+ color: var(--blue);
+ text-align: center;
+ text-transform: capitalize;
+ border: 2px solid var(--blue);
+ letter-spacing: 20px;
+ background-color: black;
+ border-radius: 15px;
+ margin-left: 10px;
+}
+.fa-house {
+ color: green;
+ font-size: 40px;
+}
+a {
+ word-spacing: 10px;
+ /* letter-spacing: 10px; */
+ text-decoration: none;
+ text-transform: capitalize;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ color: var(--red);
+background: var(--blue);
+font-size: 40px;
+font-style: italic;
+
+}
